@@ -1,14 +1,44 @@
+// Just export the raw data - no JSX, no React imports
 export const snacks = {
   japan: [
-    { name: "Pocky", image: "https://link.to/pocky.jpg" },
-    { name: "Mochi", image: "https://link.to/mochi.jpg" }
-  ],
-  usa: [
-    { name: "Twinkies", image: "https://link.to/twinkies.jpg" },
-    { name: "Cheetos", image: "https://link.to/cheetos.jpg" }
+    {
+      id: 1,
+      name: "Pocky",
+      description: "Chocolate-coated biscuit sticks",
+      iconType: "candy", // String identifier
+      iconColor: "text-pink-500" // Tailwind class
+    },
+    {
+      id: 2,
+      name: "Kit Kat Matcha",
+      description: "Green tea flavored Kit Kat",
+      iconType: "cookie",
+      iconColor: "text-emerald-500"
+    }
   ],
   mexico: [
-    { name: "Takis", image: "https://link.to/takis.jpg" },
-    { name: "Mazapan", image: "https://link.to/mazapan.jpg" }
+    {
+      id: 3,
+      name: "Takis",
+      description: "Spicy rolled corn chips",
+      iconType: "pizza",
+      iconColor: "text-red-500"
+    },
+    {
+      id: 4,
+      name: "Mazapán",
+      description: "Peanut candy",
+      iconType: "croissant",
+      iconColor: "text-amber-500"
+    }
+  ],
+  italy: [
+    {
+      id: 5,
+      name: "Baci Perugina",
+      description: "Hazelnut chocolates",
+      iconType: "coffee",
+      iconColor: "text-rose-800"
+    }
   ]
 };
